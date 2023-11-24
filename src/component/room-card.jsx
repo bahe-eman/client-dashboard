@@ -27,7 +27,7 @@ export default function RoomCard({
     bg-white m-4"
       >
         <img
-          src={`${import.meta.env.VITE_ADDR_API}/${image}`}
+          src={image}
           className="
       h-[180px] 
       min-[375px]:h-[250px]

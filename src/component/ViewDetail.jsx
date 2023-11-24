@@ -41,15 +41,8 @@ export default function ViewDetail() {
           {category && (
             <div className="w-screen grid grid-cols-2">
               <Slider {...sliderSettings} className="w-3/4">
-                <img
-                  className=""
-                  src={`${import.meta.env.VITE_ADDR_API}/${category.image}`}
-                />
-                {category.image2 && (
-                  <img
-                    src={`${import.meta.env.VITE_ADDR_API}/${category.image2}`}
-                  />
-                )}
+                <img className="" src={category.image} />
+                {category.image2 && <img src={category.image2} />}
               </Slider>
               <div className="ml-[-120px] text-xl">
                 <div className="uppercase py-4 font-semibold text-2xl">
